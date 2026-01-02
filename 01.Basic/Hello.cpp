@@ -2,6 +2,6 @@
 using namespace std;
 
 int main(){
-    cout << "Phase 1 Started: Mastering C++ for Game Dev & Web Engineering." << endl;
+    cout << "Day 1: Official Start. Exploring C++ and DSA." << endl;
     return 0;
 }
