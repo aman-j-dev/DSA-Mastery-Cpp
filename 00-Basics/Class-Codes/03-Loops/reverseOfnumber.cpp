@@ -6,21 +6,33 @@ int main(){
     cout << "Enter a number : ";
     cin >> num;
     n=num;
-    int count = 0;
-    int multiple;
+    // int count = 0;
+    // int multiple;
     
-    for(; n > 0 ; ){
-        count++;
-        if(count == 1){
-            multiple = 1;
-        }else{
-            multiple*=10;
-        }
+    // for(; n > 0 ; ){
+    //     count++;
+    //     if(count == 1){
+    //         multiple = 1;
+    //     }else{
+    //         multiple*=10;
+    //     }
+    //     n/=10;
+    // }
+    // n = num; 
+    // for(; multiple!=0 ; multiple/=10 , n/=10){
+    //     reversedNum = reversedNum + ((n%10)*multiple);
+    // }
+    // cout << "Reverse of " << num << " is : " << reversedNum << endl;
+    
+    
+    // OR
+    
+    
+    
+    for(;n > 0 ;){
+        reversedNum *=10;
+        reversedNum += (n%10);
         n/=10;
-    }
-    n = num; 
-    for(; multiple!=0 ; multiple/=10 , n/=10){
-        reversedNum = reversedNum + ((n%10)*multiple);
     }
     cout << "Reverse of " << num << " is : " << reversedNum << endl;
 }
